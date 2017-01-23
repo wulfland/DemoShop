@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using DemoWebShop.Models;
 using DemoWebShop.Models.AccountViewModels;
 using DemoWebShop.Services;
+using Microsoft.ApplicationInsights;
 
 namespace DemoWebShop.Controllers
 {
@@ -22,6 +23,7 @@ namespace DemoWebShop.Controllers
         private readonly IEmailSender _emailSender;
         private readonly ISmsSender _smsSender;
         private readonly ILogger _logger;
+        private readonly TelemetryClient _client;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
@@ -35,6 +37,7 @@ namespace DemoWebShop.Controllers
             _emailSender = emailSender;
             _smsSender = smsSender;
             _logger = loggerFactory.CreateLogger<AccountController>();
+            _client = new TelemetryClient();
         }
 
         //
@@ -91,6 +94,8 @@ namespace DemoWebShop.Controllers
         [AllowAnonymous]
         public IActionResult Register(string returnUrl = null)
         {
+            _client.TrackEvent("RegistrationRequest");
+
             ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
@@ -109,6 +114,8 @@ namespace DemoWebShop.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    _client.TrackEvent("RegistrationCompleted");
+
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
                     // Send an email with this link
                     //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -120,6 +127,9 @@ namespace DemoWebShop.Controllers
                     return RedirectToLocal(returnUrl);
                 }
                 AddErrors(result);
+            }else
+            {
+                _client.TrackEvent("RegistrationInvalid");
             }
 
             // If we got this far, something failed, redisplay form

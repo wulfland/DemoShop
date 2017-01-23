@@ -1,8 +1,8 @@
-﻿{
+{
   "userSecretsId": "aspnet-DemoWebShop-6c7ae61c-cf93-4983-aa04-d3684e3ca862",
 
   "dependencies": {
-    "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
+    "Microsoft.ApplicationInsights.AspNetCore": "1.0.2",
     "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
