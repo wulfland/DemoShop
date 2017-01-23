@@ -9,6 +9,41 @@ namespace DemoWebShop.Models.AccountViewModels
     public class RegisterViewModel
     {
         [Required]
+        [StringLength(100)]
+        [DataType(DataType.Text)]
+        [Display(Name = "Name")]
+        public string Name { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        [DataType(DataType.Text)]
+        [Display(Name = "FirstName")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        [DataType(DataType.Text)]
+        [Display(Name = "Street")]
+        public string Street { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        [DataType(DataType.Text)]
+        [Display(Name = "City")]
+        public string City { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        [DataType(DataType.PostalCode)]
+        [Display(Name = "Postal Code")]
+        public string PostalCode { get; set; }
+
+        [StringLength(100)]
+        [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Phone")]
+        public string Phone { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
