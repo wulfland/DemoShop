@@ -14,8 +14,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
-    <ApplicationInsightsResourceId>/subscriptions/d92a068f-b5ee-400e-9f34-4eebe5bfe748/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/DemoWebShop</ApplicationInsightsResourceId>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/d92a068f-b5ee-400e-9f34-4eebe5bfe748/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/DemoWebShop</ApplicationInsightsAnnotationResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/5e4afc70-4bab-46e4-80b9-c168f9d9183b/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/DemoWebShop</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/5e4afc70-4bab-46e4-80b9-c168f9d9183b/resourceGroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/DemoWebShop</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
   <ItemGroup>
     <DnxInvisibleContent Include="bower.json" />
