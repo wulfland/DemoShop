@@ -10,9 +10,8 @@ Param
 
     # The name for the web app
     [Parameter(Mandatory=$true)]
-    [ValidatePattern("[a-z]*")]
-    [ValidateLength(0,15)]
     [String]$WebAppName,
+
     [ValidateSet("Small", "Medium", "Large", "ExtraLarge")]
     [string]$WorkerSize = "Small"
     # The size for the app service plan
