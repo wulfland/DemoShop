@@ -247,6 +247,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\chocolate-cupcake-with-raspberry-buttercream-and-chocolate-ganache-3871.jpg" />
+    <Content Include="Images\Chocolate_Cupcakes_with_Raspberry_Buttercream.jpg" />
+    <Content Include="Images\cupcake-training.jpg" />
+    <Content Include="Images\cupcakes-box.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
