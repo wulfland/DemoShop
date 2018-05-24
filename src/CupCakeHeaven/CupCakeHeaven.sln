@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CupCakeHeaven", "CupCakeHea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CupCakeHeaven.Tests", "CupCakeHeaven.Tests\CupCakeHeaven.Tests.csproj", "{1A9C8AFF-0446-4AB8-8CAA-7885118FF3B2}"
 EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "CupCakeHeaven.IaC", "CupCakeHeaven.IaC\CupCakeHeaven.IaC.deployproj", "{4843180E-92AF-42BB-BAFD-48783C386BF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,15 @@ Global
 		{1A9C8AFF-0446-4AB8-8CAA-7885118FF3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A9C8AFF-0446-4AB8-8CAA-7885118FF3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A9C8AFF-0446-4AB8-8CAA-7885118FF3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4843180E-92AF-42BB-BAFD-48783C386BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4843180E-92AF-42BB-BAFD-48783C386BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4843180E-92AF-42BB-BAFD-48783C386BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4843180E-92AF-42BB-BAFD-48783C386BF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E0F0B91-B3FE-465A-8DBD-FD7705E8FB8B}
 	EndGlobalSection
 EndGlobal
